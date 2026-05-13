@@ -1,0 +1,41 @@
+{
+    "name": "htmltopdfapi/php-sdk",
+    "description": "Official PHP and Laravel SDK for the HTML to PDF API.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["html", "pdf", "html-to-pdf", "laravel", "sdk", "api"],
+    "require": {
+        "php": "^8.1",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0",
+        "orchestra/testbench": "^9.0",
+        "laravel/pint": "^1.0",
+        "mockery/mockery": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "HtmlToPdfApi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HtmlToPdfApi\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "HtmlToPdfApi\\Laravel\\HtmlToPdfServiceProvider"
+            ],
+            "aliases": {
+                "HtmlToPdf": "HtmlToPdfApi\\Laravel\\Facades\\HtmlToPdf"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
