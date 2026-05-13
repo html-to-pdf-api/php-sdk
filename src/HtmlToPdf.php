@@ -13,6 +13,12 @@ namespace HtmlToPdfApi;
  */
 class HtmlToPdf
 {
+    /**
+     * SDK version. Bump on every release; surfaced in the User-Agent header
+     * so the API can correlate issues with specific SDK versions.
+     */
+    public const VERSION = '0.1.0';
+
     private Client $client;
 
     /**

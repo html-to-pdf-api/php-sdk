@@ -34,7 +34,7 @@ class Client
             'headers' => [
                 'Authorization' => 'Bearer '.$this->config->apiKey,
                 'Accept' => 'application/pdf, application/json',
-                'User-Agent' => 'htmltopdfapi-php-sdk/0.1',
+                'User-Agent' => 'htmltopdfapi-php-sdk/'.HtmlToPdf::VERSION.' (PHP '.PHP_VERSION.')',
             ],
             'handler' => $handlerStack,
         ]);

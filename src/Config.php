@@ -28,7 +28,8 @@ final class Config
         $apiKey = $config['api_key'] ?? null;
         if (empty($apiKey) || ! is_string($apiKey)) {
             throw new \InvalidArgumentException(
-                'HtmlToPdf API key is required. Pass it as `api_key` or set HTML_TO_PDF_API_KEY in your environment.'
+                'HtmlToPdf API key is required. Pass `api_key` in the config array, '
+                .'or in Laravel set HTML_TO_PDF_API_KEY in your .env file.'
             );
         }
 
