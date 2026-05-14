@@ -32,8 +32,21 @@ HtmlToPdf::html('<h1>Invoice #001</h1>...')
 | | Supported |
 |---|---|
 | **PHP** | 8.1, 8.2, 8.3, 8.4 |
-| **Laravel** | 10.x, 11.x |
+| **Laravel** | 8.x, 9.x, 10.x, 11.x, 12.x, 13.x |
 | **Required extensions** | `ext-curl`, `ext-json` (both ship with PHP by default) |
+
+The full Laravel × PHP test matrix lives in [`.github/workflows/ci.yml`](.github/workflows/ci.yml) — every combination below runs on every PR:
+
+| Laravel | PHP versions tested |
+|---|---|
+| 8.x  | 8.1 |
+| 9.x  | 8.1 |
+| 10.x | 8.1, 8.2 |
+| 11.x | 8.2, 8.3 |
+| 12.x | 8.2, 8.3, 8.4 |
+| 13.x | 8.3, 8.4 |
+
+> **Laravel < 8 (i.e. 6.x / 7.x):** not tested. The SDK has no Laravel-version-specific code and only touches stable `ServiceProvider` / `Facade` APIs, so it *may* work — but you'd also need PHP 8.1+ (which Laravel 6/7 don't officially support), and we don't run CI against it. Use at your own risk.
 
 The SDK does **not** require Laravel — `composer require htmltopdfapi/php-sdk` in a vanilla PHP project works fine.
 
