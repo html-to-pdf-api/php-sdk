@@ -35,7 +35,11 @@
         }
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "audit": {
+            "abandoned": "ignore",
+            "block-insecure": false
+        }
     },
     "minimum-stability": "stable"
 }
