@@ -20,7 +20,7 @@ return [
     | Override when running against a local or staging API.
     |
     */
-    'base_url' => env('HTML_TO_PDF_BASE_URL', 'https://api.htmltopdfapi.co/api/v1'),
+    'base_url' => env('HTML_TO_PDF_BASE_URL', 'https://platform.htmltopdfapi.co/api/v1'),
 
     /*
     |--------------------------------------------------------------------------

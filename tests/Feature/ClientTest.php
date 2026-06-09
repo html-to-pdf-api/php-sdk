@@ -148,7 +148,7 @@ class ClientTest extends TestCase
     {
         $this->mock->append(new ConnectException(
             'Connection refused',
-            new Request('POST', 'https://api.htmltopdfapi.co/api/v1/pdf/generate'),
+            new Request('POST', 'https://platform.htmltopdfapi.co/api/v1/pdf/generate'),
         ));
 
         $this->expectException(ConnectionException::class);

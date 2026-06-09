@@ -18,7 +18,7 @@ The service provider and facade are auto-discovered. Just set your API key in `.
 
 ```bash
 HTML_TO_PDF_API_KEY=sk_xxxxxxxxxxxxxx
-HTML_TO_PDF_BASE_URL=https://api.htmltopdfapi.co/api/v1   # optional, default shown
+HTML_TO_PDF_BASE_URL=https://platform.htmltopdfapi.co/api/v1   # optional, default shown
 HTML_TO_PDF_TIMEOUT=60                                    # optional, default shown
 ```
 
@@ -45,7 +45,7 @@ use HtmlToPdfApi\HtmlToPdf;
 
 $sdk = new HtmlToPdf([
     'api_key'  => getenv('HTML_TO_PDF_API_KEY'),
-    'base_url' => 'https://api.htmltopdfapi.co/api/v1',
+    'base_url' => 'https://platform.htmltopdfapi.co/api/v1',
     'timeout'  => 60,
 ]);
 

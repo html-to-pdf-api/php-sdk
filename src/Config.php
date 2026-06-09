@@ -10,7 +10,7 @@ namespace HtmlToPdfApi;
  */
 final class Config
 {
-    public const DEFAULT_BASE_URL = 'https://api.htmltopdfapi.co/api/v1';
+    public const DEFAULT_BASE_URL = 'https://platform.htmltopdfapi.co/api/v1';
 
     public const DEFAULT_TIMEOUT_SECONDS = 60;
 

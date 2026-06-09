@@ -97,7 +97,7 @@ HTML_TO_PDF_API_KEY=sk_live_xxxxxxxxxxxxxxxx
 | Env var | Config key | Default | Notes |
 |---|---|---|---|
 | `HTML_TO_PDF_API_KEY` | `api_key` | — | **Required.** Bearer token for the API. |
-| `HTML_TO_PDF_BASE_URL` | `base_url` | `https://api.htmltopdfapi.co/api/v1` | Override for staging / local dev. |
+| `HTML_TO_PDF_BASE_URL` | `base_url` | `https://platform.htmltopdfapi.co/api/v1` | Override for staging / local dev. |
 | `HTML_TO_PDF_TIMEOUT` | `timeout` | `60` | Seconds before the HTTP client gives up on a single render. |
 
 ### Laravel
@@ -115,7 +115,7 @@ use HtmlToPdfApi\HtmlToPdf;
 
 $sdk = new HtmlToPdf([
     'api_key'  => getenv('HTML_TO_PDF_API_KEY'),
-    'base_url' => 'https://api.htmltopdfapi.co/api/v1', // optional
+    'base_url' => 'https://platform.htmltopdfapi.co/api/v1', // optional
     'timeout'  => 60,                                    // optional
 ]);
 ```
