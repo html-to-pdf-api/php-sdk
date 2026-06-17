@@ -1,6 +1,8 @@
 # HTML to PDF API — PHP / Laravel SDK
 
 [![CI](https://github.com/html-to-pdf-api/php-sdk/actions/workflows/ci.yml/badge.svg)](https://github.com/html-to-pdf-api/php-sdk/actions/workflows/ci.yml)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/htmltopdfapi/php-sdk.svg)](https://packagist.org/packages/htmltopdfapi/php-sdk)
+[![Total Downloads](https://img.shields.io/packagist/dt/htmltopdfapi/php-sdk.svg)](https://packagist.org/packages/htmltopdfapi/php-sdk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![PHP Version](https://img.shields.io/badge/PHP-8.1%2B-777BB4.svg)](composer.json)
 
@@ -53,30 +55,6 @@ The SDK does **not** require Laravel — `composer require htmltopdfapi/php-sdk`
 ---
 
 ## Install
-
-> **Note**: this package isn't on Packagist yet. Install from GitHub via a VCS repository in your `composer.json`:
-
-```json
-{
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/html-to-pdf-api/php-sdk"
-    }
-  ],
-  "require": {
-    "htmltopdfapi/php-sdk": "dev-main"
-  }
-}
-```
-
-Then:
-
-```bash
-composer update htmltopdfapi/php-sdk
-```
-
-Once published to Packagist this becomes the standard one-liner:
 
 ```bash
 composer require htmltopdfapi/php-sdk
